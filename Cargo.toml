@@ -1,0 +1,16 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["lucsoft <mail@lucsoft.de>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fltk = "1.2"
+serde = { version = "1", features = ["derive"] }
+deno_bindgen = { git = "https://github.com/littledivy/deno_bindgen.git", rev = "60a6f8a" }
+lazy_static = "1.4.0"
